@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+    height: 100px;
+}
+
+.navLogo {
+    color: blueviolet;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.navLinks {
+    color: antiquewhite;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    margin-right: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 20px;
+}
+
+.footerContainer {
+    padding: 40px;
+    background-color: black;
+}
+
+.listaFooter {
+    display: flex;
+    justify-content: center;
+}

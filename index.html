@@ -4,33 +4,35 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
         <title>Bienvenido</title>
     </head>
     <body>
-        <header>
-            <h1>
-                Fravega
-            </h1>
-            <hr>
+        <header class="container">
+            <div class="navLogo">
+                <h1>Fravega</h1>
+            </div>
+            <nav>
+                <ul class="navLinks">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Quienes Somos</a></li>
+                    <li><a href="">Sucursales</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Quienes Somos</a></li>
-                <li><a href="">Sucursales</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </nav>
-        <hr>
         <main>
+            <div>
+                <h2>Nuestros Productos: </h2>
+            </div>
             <section>
                 <div>
-                    <h2>Laptops</h2>
+                    <h3>Laptops</h3>
                     <img
                         src="https://www.computerssalejalapa.com/web/image/product.template/3415/image_256/%5BNH.Q7MAL.015%5D%20Laptop%20Acer%20Nitro%205%20AN515-55-52FK?unique=29788ad"
                         alt="laptop">
-                    <h3>Categoria: <a href="#">Computadoras</a></h3>
-                    <h5>Descripcion:</h5>
+                    <h4>Categoria: <a href="#">Computadoras</a></h4>
+                    <h4>Descripcion:</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Totam unde porro exercitationem quo veniam aperiam,
                         distinctio expedita a praesentium facere recusandae
@@ -40,12 +42,12 @@
                 </div>
                 <hr>
                 <div>
-                    <h2>PC Escritorio</h2>
+                    <h3>PC Escritorio</h3>
                     <img
                         src="https://cdn11.bigcommerce.com/s-t4yqg98af9/products/1224683/images/6147077/apiu3izim__84538.1621461233.256.256.jpg?c=2"
                         alt="pc-escritorio">
-                    <h3>Categoria: <a href="#">Computadoras</a></h3>
-                    <h5>Descripcion:</h5>
+                    <h4>Categoria: <a href="#">Computadoras</a></h4>
+                    <h4>Descripcion:</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Totam unde porro exercitationem quo veniam aperiam,
                         distinctio expedita a praesentium facere recusandae
@@ -55,12 +57,12 @@
                 </div>
                 <hr>
                 <div>
-                    <h2>Heladeras</h2>
+                    <h3>Heladeras</h3>
                     <img
                         src="http://generico.sublimesolutions.com/productos/imgs/heladera-no-frost-philco-phsb570xa-570lt-828-31.jpg"
                         alt="heladera">
-                    <h3>Categoria: <a href="#">Electrodomesticos</a></h3>
-                    <h5>Descripcion:</h5>
+                    <h4>Categoria: <a href="#">Electrodomesticos</a></h4>
+                    <h4>Descripcion:</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Totam unde porro exercitationem quo veniam aperiam,
                         distinctio expedita a praesentium facere recusandae
@@ -70,12 +72,12 @@
                 </div>
                 <hr>
                 <div>
-                    <h2>Smart TV</h2>
+                    <h3>Smart TV</h3>
                     <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XFYfIW7BUx2P3Zla6A72tym40riw4pqdND6a_p_p7LIwRpteH6jK6aHpZ1zDM1CEjV4&usqp=CAU"
                         alt="smart-tv">
-                    <h3>Categoria: <a href="#">Electrodomesticos</a></h3>
-                    <h5>Descripcion:</h5>
+                    <h4>Categoria: <a href="#">Electrodomesticos</a></h4>
+                    <h4>Descripcion:</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Totam unde porro exercitationem quo veniam aperiam,
                         distinctio expedita a praesentium facere recusandae
@@ -85,12 +87,12 @@
                 </div>
                 <hr>
                 <div>
-                    <h2>Consolas</h2>
+                    <h3>Consolas</h3>
                     <img
                         src="data:image/jpeg;base64,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"
                         alt="consola-ps5">
-                    <h3>Categoria: <a href="#">Entretenimiento</a></h3>
-                    <h5>Descripcion:</h5>
+                    <h4>Categoria: <a href="#">Entretenimiento</a></h4>
+                    <h4>Descripcion:</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Totam unde porro exercitationem quo veniam aperiam,
                         distinctio expedita a praesentium facere recusandae
@@ -102,11 +104,13 @@
             </section>
         </main>
         <footer>
-            <ul>
-                <li><a href="#">Whatsapp</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Email</a></li>
-            </ul>
+            <div class="footerContainer">
+                <ul class="listaFooter">
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
