@@ -3,36 +3,103 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    color: antiquewhite;
     list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.container {
+.navbarContainer {
+    background-color: #000000;
     display: flex;
+    justify-content: space-between;
+    height: 70px;
     align-items: center;
-    justify-content: flex-end;
-    background-color: black;
-    height: 100px;
+    padding: 0 3%;
 }
 
-.navLogo {
-    color: blueviolet;
-    margin-right: auto;
-    margin-left: 20px;
-}
-
-.navLinks {
-    color: antiquewhite;
+.navLinksContainer {
     display: flex;
+    gap: 30px;
 }
 
-ul {
-    list-style: none;
-    margin-right: 50px;
+.navLogoContainer h1 {
+    color: blueviolet;
+    letter-spacing: 5px;
+    font-weight: bolder;
 }
 
-ul li a {
-    text-decoration: none;
-    color: antiquewhite;
+nav ul li a {
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+    word-spacing: 5px;
+}
+
+.title {
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    ;
+}
+
+.cardItem {
+    background-color: black;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cardItem a {
+    color: blueviolet;
+}
+
+.cardItem h3 {
+    text-align: center;
+}
+
+.buyContainer button {
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(138, 118, 236);
+    border: none;
+}
+
+.cardItem img {
+    width: 50%;
+    margin: auto;
+}
+
+.buyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.cardItem p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.cardItem h4 {
+    text-align: center;
+}
+
+.nuestrosProductos {
+    color: black;
+    text-align: center;
     padding: 20px;
 }
 
@@ -44,4 +111,5 @@ ul li a {
 .listaFooter {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
