@@ -43,19 +43,20 @@ nav ul li a {
 
 .cardItem {
     background-color: black;
-    width: 450px;
-    height: 450px;
+    width: 400px;
     margin-bottom: 30px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    gap: 5px;
 }
 
 .cardContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 
